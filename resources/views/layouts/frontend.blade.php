@@ -1077,7 +1077,8 @@
     <!-- Start footer section -->
 
     <!-- Start News letter popup -->
-    <div class="newsletter__popup" data-animation="slideInUp" id="customNewsletterPopup">
+    <div class="newsletter__popup" data-animation="slideInUp" id="customNewsletterPopup" >
+        <a href="tel:+18555815811">
         <div id="boxes" class="newsletter__popup--inner">
             <button class="newsletter__popup--close__btn" aria-label="Close" id="popupCloseBtn">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 512 512">
@@ -1147,8 +1148,10 @@
                 </div>
             </div>
         </div>
+    </a>
     </div>
     <!-- End News letter popup -->
+     
 
     <style>
         /* Backdrop & Blur Overlay */
