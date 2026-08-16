@@ -13,6 +13,7 @@ use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Http;
 use Illuminate\Support\Facades\Mail;
+use Illuminate\Support\Facades\Log;
 
 class HomeController extends Controller
 {
@@ -195,9 +196,7 @@ public function contactEnquiry(Request $request)
         'subject' => 'required',
         'email' => 'required|email',
         'mobile' => 'required|digits:10',
-        'g-recaptcha-response' => 'required',
     ];
-
     $messages = [
         'full_name.required' => 'Your Full Name is required',
         'subject.required' => 'Your Subject is required',
@@ -205,25 +204,10 @@ public function contactEnquiry(Request $request)
         'email.email' => 'Email should be a valid email',
         'mobile.required' => 'The mobile number field is required.',
         'mobile.digits' => 'The mobile number must be exactly 10 digits.',
-        'g-recaptcha-response.required' => 'Please complete the captcha.',
     ];
-
     $request->validate($rules, $messages);
 
-    // Verify Google reCAPTCHA
-    $response = Http::asForm()->post('https://www.google.com/recaptcha/api/siteverify', [
-        'secret' => env('RECAPTCHA_SECRET_KEY'),
-        'response' => $request->input('g-recaptcha-response'),
-        'remoteip' => $request->ip(),
-    ]);
-
-    $responseBody = $response->json();
-
-    if (!isset($responseBody['success']) || !$responseBody['success']) {
-        return response()->json(['status' => 'error', 'message' => 'Captcha verification failed. Please try again.'], 422);
-    }
-
-    // Save enquiry as before...
+    // Save enquiry
     $enquiry = new Enquiry();
     $enquiry->full_name = $request->full_name;
     $enquiry->subject = $request->subject;
@@ -233,8 +217,12 @@ public function contactEnquiry(Request $request)
     $enquiry->ip_address = $request->ip();
     $enquiry->save();
 
-    Mail::to('support@sparepartzone.com')->send(new ContactMail($enquiry));
-    Mail::to($request->email)->send(new Thankyou($enquiry));
+    try {
+        Mail::to('support@sparepartzone.com')->send(new ContactMail($enquiry));
+        Mail::to($request->email)->send(new Thankyou($enquiry));
+    } catch (\Throwable $e) {
+        Log::error("Mail send error in contactEnquiry: " . $e->getMessage());
+    }
 
     return response()->json(['status' => 'success', 'message' => 'Enquiry Sent Successfully']);
 }
@@ -302,8 +290,12 @@ public function contactEnquiry(Request $request)
     $enquiry->save();
 
     // Send mails
-    Mail::to('support@sparepartzone.com')->send(new ContactMail($enquiry));
-    Mail::to($request->email)->send(new Thankyou($enquiry));
+    try {
+        Mail::to('support@sparepartzone.com')->send(new ContactMail($enquiry));
+        Mail::to($request->email)->send(new Thankyou($enquiry));
+    } catch (\Throwable $e) {
+        Log::error("Mail send error in autoEnquiry: " . $e->getMessage());
+    }
 
     return response()->json(['status' => 'success', 'message' => 'Enquiry Sent Successfully']);
 }
@@ -360,8 +352,12 @@ public function contactEnquiry(Request $request)
     $enquiry->ip_address = $request->ip();
     $enquiry->save();
 
-    Mail::to('support@sparepartzone.com')->send(new ContactMail($enquiry));
-    Mail::to($request->email)->send(new Thankyou($enquiry));
+    try {
+        Mail::to('support@sparepartzone.com')->send(new ContactMail($enquiry));
+        Mail::to($request->email)->send(new Thankyou($enquiry));
+    } catch (\Throwable $e) {
+        Log::error("Mail send error in modelEnquiry: " . $e->getMessage());
+    }
 
     return response()->json(['status' => 'success', 'message' => 'Enquiry Sent Successfully']);
 }
@@ -417,8 +413,12 @@ public function contactEnquiry(Request $request)
     $enquiry->save();
 
     // Send mails
-    Mail::to('support@sparepartzone.com')->send(new ContactMail($enquiry));
-    Mail::to($request->email)->send(new Thankyou($enquiry));
+    try {
+        Mail::to('support@sparepartzone.com')->send(new ContactMail($enquiry));
+        Mail::to($request->email)->send(new Thankyou($enquiry));
+    } catch (\Throwable $e) {
+        Log::error("Mail send error in leadEnquiry: " . $e->getMessage());
+    }
 
     return response()->json(['status' => 'success', 'message' => 'Enquiry Sent Successfully']);
 }

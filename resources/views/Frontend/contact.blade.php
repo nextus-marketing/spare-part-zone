@@ -71,14 +71,6 @@
                                 </div>
                             </div>
 
-                            <div class="col-12 mt-1">
-                                <div style="text-align: center; margin-top: 10px;">
-                                    <div class="g-recaptcha d-inline-block" data-sitekey="6LeuVdUrAAAAAJAmNQfEpWMHWmiFUErEfhweKNNJ"></div>
-                                </div>
-                            </div>
-
-                            <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-
                             <div class="col-12 text-center mt-4">
                                 <button class="contact__form--btn primary__btn" type="submit" id="submit">
                                     <span>Submit Now</span>
