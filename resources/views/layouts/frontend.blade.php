@@ -447,7 +447,7 @@
 
                         </div>
                         <a href="/" class="mobile-logo new-mb-logo">
-                            <img src="/frontend/my_img/logo/logo.webp" alt="Spare Part Zone Logo"
+                            <img src="/frontend/my_img/logo/logo-main.png" alt="Spare Part Zone Logo"
                                 style="max-width: 114%; margin-left: -231px;">
                         </a>
 
@@ -484,7 +484,7 @@
                 <div class="header__bottom--inner position__relative d-flex align-items-center">
                     <div class="site-logo pb-0 pt-0">
                         <a href="/">
-                            <img src="/frontend/my_img/logo/logo.webp" alt="Spare Part Zone Logo">
+                            <img src="/frontend/my_img/logo/logo-main.png" alt="Spare Part Zone Logo">
                         </a>
                     </div>
                     {{-- Header 1 --}}
@@ -853,7 +853,7 @@
             <div class="offcanvas__inner">
                 <div class="offcanvas__logo">
                     <a class="offcanvas__logo_link" href="/">
-                        <img src="/frontend/my_img/logo/logo.webp" alt="Logo" width="158" height="36">
+                        <img src="/frontend/my_img/logo/logo-main.png" alt="Logo" width="158" height="36">
                     </a>
 
                     <button class="offcanvas__close--btn" data-offcanvas>close</button>
@@ -1906,7 +1906,7 @@
             <div class="container">
                 <div class="footer__bottom--inenr d-flex justify-content-between align-items-center">
                     <div class="footer__logo">
-                        <a class="footer__logo--link" href="/"><img src="/frontend/my_img/logo/logo.webp"
+                        <a class="footer__logo--link" href="/"><img src="/frontend/my_img/logo/logo-main.png"
                                 alt="logo-img">
                         </a>
                     </div>
@@ -1936,7 +1936,7 @@
 
             <!-- Centered Logo -->
             <div class="modal-logo">
-                <img src="/frontend/my_img/logo/logo.webp" alt="Company Logo">
+                <img src="/frontend/my_img/logo/logo-main.png" alt="Company Logo">
             </div>
 
             <form action="/model-enquiry" enctype="multipart/form-data" method="POST" id="modelForm"
