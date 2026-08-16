@@ -12,8 +12,8 @@
     <style>
         .btn-primary {
             --bs-btn-color: #fff !important;
-            --bs-btn-bg: #dc3545 !important;
-            --bs-btn-border-color: #dc3545 !important;
+            --bs-btn-bg: #ff4d24 !important;
+            --bs-btn-border-color: #ff4d24 !important;
             --bs-btn-hover-color: #fff !important;
             --bs-btn-hover-bg: #bb2d3b !important;
         }
@@ -38,7 +38,7 @@
         }
 
         .toggle-password:hover {
-            color: #dc3545;
+            color: #ff4d24;
             transform: translateY(-50%) scale(1.1);
         }
 
@@ -79,9 +79,9 @@
                             <div class="col-sm-8 col-md-6 col-xl-9">
 
                                 <div class="text-center mb-4">
-                                    <img src="/frontend/my_img/logo/logo.png" width="180" alt="Logo" />
+                                    <img src="/frontend/my_img/logo/logo.jpg" width="180" alt="Logo" />
                                     <h2 class="mb-2 fs-7 fw-bolder">
-                                        Welcome to <span style="color: #dc3545">Spare Part Zone</span>
+                                        Welcome to <span style="color: #ff4d24">Spare Part Zone</span>
                                     </h2>
                                     <p class="mb-4">Your Admin Dashboard</p>
                                 </div>

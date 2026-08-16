@@ -115,7 +115,7 @@ class LoginController extends Controller
             'is_used' => false,
         ]);
 
-        $companyName = "Premium Car Parts";
+        $companyName = "Spare Part Zone";
         // $adminEmail = "siddhesh.sonavane024@gmail.com";
         $adminEmail = "yusuf@nextusglobalservices.com";
 

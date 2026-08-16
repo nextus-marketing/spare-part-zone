@@ -55,7 +55,7 @@
             <div>
                 <div class="brand-logo d-flex align-items-center justify-content-between">
                     <a href="{{ route('admin.dashboard.index') }}" class="text-nowrap logo-img">
-                        <img src="/frontend/my_img/logo/logo.png" width="180" alt="logo" />
+                        <img src="/frontend/my_img/logo/logo.jpg" width="180" alt="logo" />
                     </a>
                     <div class="close-btn d-lg-none d-block sidebartoggler cursor-pointer" id="sidebarCollapse">
                         <i class="ti ti-x fs-8 text-muted"></i>

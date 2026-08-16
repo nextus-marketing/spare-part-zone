@@ -54,7 +54,7 @@
 }
 
 .table-responsive::-webkit-scrollbar-thumb {
-    background-color: #dc3545;
+    background-color: #ff4d24;
     border-radius: 10px;
 }
 
@@ -76,26 +76,26 @@
 }
 
 .btn-outline-primary {
-    --bs-btn-color: #dc3545 !important;
-    --bs-btn-border-color: #dc3545 !important;
+    --bs-btn-color: #ff4d24 !important;
+    --bs-btn-border-color: #ff4d24 !important;
     --bs-btn-hover-color: #fff !important;
-    --bs-btn-hover-bg: #dc3545 !important;
-    --bs-btn-hover-border-color: #dc3545 !important;
+    --bs-btn-hover-bg: #ff4d24 !important;
+    --bs-btn-hover-border-color: #ff4d24 !important;
     --bs-btn-focus-shadow-rgb: 220, 53, 69 !important;
     --bs-btn-active-color: #fff !important;
     --bs-btn-active-bg: #bb2d3b !important;
     --bs-btn-active-border-color: #b02a37 !important;
     --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125) !important;
-    --bs-btn-disabled-color: #dc3545 !important;
+    --bs-btn-disabled-color: #ff4d24 !important;
     --bs-btn-disabled-bg: transparent !important;
-    --bs-btn-disabled-border-color: #dc3545 !important;
+    --bs-btn-disabled-border-color: #ff4d24 !important;
     --bs-gradient: none !important;
 }
 
 .sidebar-nav ul .sidebar-item.selected>.sidebar-link,
 .sidebar-nav ul .sidebar-item.selected>.sidebar-link.active,
 .sidebar-nav ul .sidebar-item>.sidebar-link.active {
-    background-color: #e71616 !important;
+    background-color: #ff4d24 !important;
     color: #fff !important;
 }
 
@@ -144,9 +144,9 @@
 
 .btn-secondary {
     --bs-btn-color: #fff !important;
-    --bs-btn-bg: #dc3545 !important;
+    --bs-btn-bg: #ff4d24 !important;
     /* Base red */
-    --bs-btn-border-color: #dc3545 !important;
+    --bs-btn-border-color: #ff4d24 !important;
     --bs-btn-hover-color: #fff !important;
     --bs-btn-hover-bg: #bb2d3b !important;
     /* Hover red */
@@ -158,8 +158,8 @@
     --bs-btn-active-border-color: #a52834 !important;
     --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125) !important;
     --bs-btn-disabled-color: #fff !important;
-    --bs-btn-disabled-bg: #dc3545 !important;
-    --bs-btn-disabled-border-color: #dc3545 !important;
+    --bs-btn-disabled-bg: #ff4d24 !important;
+    --bs-btn-disabled-border-color: #ff4d24 !important;
 }
 
 .bg-info {
@@ -169,13 +169,13 @@
 
 .table-responsive .dataTables_wrapper .dataTables_paginate .paginate_button.current {
     color: #fff !important;
-    background-color: #e71616 !important;
-    border-color: #e71616 !important;
+    background-color: #ff4d24 !important;
+    border-color: #ff4d24 !important;
 }
 
 .form-check-input:checked {
-    background-color: #e71616;
-    border-color: #e71616;
+    background-color: #ff4d24;
+    border-color: #ff4d24;
 }
 
 .ti-search {
