@@ -1,0 +1,183 @@
+/* DataTable Top Buttons */
+.dt-buttons {
+    margin-top: 7px !important;
+}
+
+.dt-button {
+    font-size: 10px !important;
+    padding: 4px 10px 4px 10px !important;
+}
+
+.buttons-copy {
+    background-color: #f8f9fa !important;
+    border: 1px solid #dee2e6 !important;
+    color: #343a40 !important;
+}
+
+.buttons-csv {
+    background-color: #f8f9fa !important;
+    border: 1px solid #dee2e6 !important;
+    color: #343a40 !important;
+}
+
+.buttons-print {
+    background-color: #f8f9fa !important;
+    border: 1px solid #dee2e6 !important;
+    color: #343a40 !important;
+}
+
+/* DataTable */
+.dataTables_filter,
+.dataTables_length {
+    margin-bottom: 0px !important;
+    margin-top: -27px !important;
+    text-align: right !important;
+}
+
+/* .table-responsive::-webkit-scrollbar {
+    -webkit-appearance: none;
+} */
+
+.table-responsive {
+    overflow-y: hidden;
+    overflow-x: auto;
+}
+
+.table-responsive {
+    overflow-y: hidden;
+    overflow-x: auto;
+}
+
+.table-responsive::-webkit-scrollbar {
+    height: 8px;
+    width: 8px;
+}
+
+.table-responsive::-webkit-scrollbar-thumb {
+    background-color: #dc3545;
+    border-radius: 10px;
+}
+
+.table-responsive::-webkit-scrollbar-track {
+    background-color: #f1f1f1;
+}
+
+/* Select 2 */
+.select2-container--default .select2-selection--multiple .select2-selection__choice {
+    background-color: #539bff !important;
+    border-color: #539bff !important;
+    color: #fff !important;
+}
+
+.select2-container--default .select2-selection--multiple .select2-selection__choice__remove {
+    background-color: #539bff !important;
+    border-color: #539bff !important;
+    color: #fff !important;
+}
+
+.btn-outline-primary {
+    --bs-btn-color: #dc3545 !important;
+    --bs-btn-border-color: #dc3545 !important;
+    --bs-btn-hover-color: #fff !important;
+    --bs-btn-hover-bg: #dc3545 !important;
+    --bs-btn-hover-border-color: #dc3545 !important;
+    --bs-btn-focus-shadow-rgb: 220, 53, 69 !important;
+    --bs-btn-active-color: #fff !important;
+    --bs-btn-active-bg: #bb2d3b !important;
+    --bs-btn-active-border-color: #b02a37 !important;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125) !important;
+    --bs-btn-disabled-color: #dc3545 !important;
+    --bs-btn-disabled-bg: transparent !important;
+    --bs-btn-disabled-border-color: #dc3545 !important;
+    --bs-gradient: none !important;
+}
+
+.sidebar-nav ul .sidebar-item.selected>.sidebar-link,
+.sidebar-nav ul .sidebar-item.selected>.sidebar-link.active,
+.sidebar-nav ul .sidebar-item>.sidebar-link.active {
+    background-color: #e71616 !important;
+    color: #fff !important;
+}
+
+.sidebar-nav ul .sidebar-item .sidebar-link:hover {
+    background-color: rgb(247 184 184) !important;
+    color: #0f1012 !important;
+}
+
+.btn-info {
+    --bs-btn-color: #fff !important;
+    --bs-btn-bg: #000 !important;
+    --bs-btn-border-color: #000 !important;
+    --bs-btn-hover-color: #fff !important;
+    --bs-btn-hover-bg: #1a1a1a !important;
+    /* Slightly lighter for hover effect */
+    --bs-btn-hover-border-color: #1a1a1a !important;
+    --bs-btn-focus-shadow-rgb: 33, 33, 33 !important;
+    --bs-btn-active-color: #fff !important;
+    --bs-btn-active-bg: #1a1a1a !important;
+    --bs-btn-active-border-color: #1a1a1a !important;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125) !important;
+    --bs-btn-disabled-color: #fff !important;
+    --bs-btn-disabled-bg: #000 !important;
+    --bs-btn-disabled-border-color: #000 !important;
+}
+
+.btn-primary {
+    --bs-btn-color: #fff !important;
+    --bs-btn-bg: #28a745 !important;
+    /* Base green */
+    --bs-btn-border-color: #28a745 !important;
+    --bs-btn-hover-color: #fff !important;
+    --bs-btn-hover-bg: #218838 !important;
+    /* Darker green for hover */
+    --bs-btn-hover-border-color: #1e7e34 !important;
+    --bs-btn-focus-shadow-rgb: 72, 180, 97 !important;
+    --bs-btn-active-color: #fff !important;
+    --bs-btn-active-bg: #1e7e34 !important;
+    /* Even darker for active */
+    --bs-btn-active-border-color: #1c7430 !important;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125) !important;
+    --bs-btn-disabled-color: #fff !important;
+    --bs-btn-disabled-bg: #28a745 !important;
+    --bs-btn-disabled-border-color: #28a745 !important;
+}
+
+.btn-secondary {
+    --bs-btn-color: #fff !important;
+    --bs-btn-bg: #dc3545 !important;
+    /* Base red */
+    --bs-btn-border-color: #dc3545 !important;
+    --bs-btn-hover-color: #fff !important;
+    --bs-btn-hover-bg: #bb2d3b !important;
+    /* Hover red */
+    --bs-btn-hover-border-color: #b02a37 !important;
+    --bs-btn-focus-shadow-rgb: 220, 53, 69 !important;
+    --bs-btn-active-color: #fff !important;
+    --bs-btn-active-bg: #b02a37 !important;
+    /* Active red */
+    --bs-btn-active-border-color: #a52834 !important;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125) !important;
+    --bs-btn-disabled-color: #fff !important;
+    --bs-btn-disabled-bg: #dc3545 !important;
+    --bs-btn-disabled-border-color: #dc3545 !important;
+}
+
+.bg-info {
+    --bs-bg-opacity: 1 !important;
+    background-color: rgb(231 22 22) !important;
+}
+
+.table-responsive .dataTables_wrapper .dataTables_paginate .paginate_button.current {
+    color: #fff !important;
+    background-color: #e71616 !important;
+    border-color: #e71616 !important;
+}
+
+.form-check-input:checked {
+    background-color: #e71616;
+    border-color: #e71616;
+}
+
+.ti-search {
+    display: none !important;
+}

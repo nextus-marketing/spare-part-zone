@@ -1,0 +1,731 @@
+.call-now-float {
+  position: fixed;
+  bottom: 30px;
+  left: 10px;
+  background: #ff4e21;
+  /* Green color */
+  color: white;
+  font-weight: bold;
+  padding: 12px 18px;
+  border-radius: 50px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  z-index: 1000;
+  font-family: Arial, sans-serif;
+}
+
+.call-now-float:hover {
+  background: #000000;
+  border: 2px solid blz;
+  /* Darker green */
+}
+
+.call-now-float svg {
+  fill: white;
+}
+
+@keyframes pulseBg {
+  0% {
+    background-color: #ff4e21;
+    box-shadow: 0 0 0 0 rgba(255, 78, 33, 0.6);
+  }
+
+  70% {
+    background-color: #4285f4;
+    box-shadow: 0 0 0 15px rgba(255, 78, 33, 0);
+  }
+
+  100% {
+    background-color: #ff4e21;
+    box-shadow: 0 0 0 0 rgba(255, 78, 33, 0);
+  }
+}
+
+.call-now-float {
+  animation: pulseBg 2s infinite;
+}
+
+.header__sub--menu {
+  display: none;
+}
+
+.header__sub--menu.open {
+  display: block;
+}
+
+/* Parent submenu items relative for positioning */
+.header__sub--menu__items {
+  position: relative;
+}
+
+.header__sub--menu__items:hover>.header__sub--menu {
+  display: block;
+
+}
+
+/* Nested submenu (submenu of submenu) */
+.header__sub--menu__items>.header__sub--menu {
+  position: absolute;
+  top: -30px;
+  /* align top edges */
+  left: 100%;
+  /* place submenu to the right */
+  margin-left: 8px;
+  margin-top: 8px;
+  /* small space between menus */
+  display: none;
+  /* hide by default */
+  z-index: 999;
+  /* ensure on top */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  min-width: 180px;
+}
+
+/* Show nested submenu when open */
+.header__sub--menu__items>.header__sub--menu.open {
+  display: block;
+}
+
+li {
+  list-style: none;
+  line-height: 0.8 !important;
+}
+
+.header__menu--navigation {
+  position: relative !important;
+  z-index: 9999 !important;
+}
+
+.menu-overlay {
+  pointer-events: none !important;
+}
+
+/* General logo styling */
+.site-logo img {
+  max-width: 100%;
+  /* Prevent overflow */
+  height: auto;
+  /* Maintain aspect ratio */
+  display: block;
+}
+
+/* Container alignment */
+.site-logo {
+  max-width: 180px;
+  padding: 4px !important;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .site-logo {
+    max-width: 140px;
+    /* Smaller logo for mobile */
+    padding: 8px;
+  }
+
+  /* Optional: Center logo on small screens */
+  .site-logo {
+    margin: 0 auto;
+    text-align: center;
+  }
+}
+
+/* Footer logo fix */
+.footer__logo img {
+  max-width: 150px;
+  /* Set a max width */
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Optional: Add spacing or alignment if needed */
+.footer__logo {
+  padding: 10px 0;
+}
+
+/* Responsive adjustment for mobile */
+@media (max-width: 768px) {
+  .footer__bottom--inenr {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer__logo {
+    margin-bottom: 10px;
+  }
+
+  .footer__logo img {
+    max-width: 120px;
+  }
+}
+
+
+
+.categories__card--link i {
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+.categories__card--link:hover i {
+  color: #fff;
+}
+
+
+.header__bottom {
+  padding-top: 5px !important;
+  padding-bottom: 5px !important;
+  min-height: auto !important;
+}
+
+.header__bottom--inner {
+  align-items: center !important;
+  padding: 0 !important;
+  height: 47px !important;
+  /* You can lower this further if needed */
+}
+
+.header__menu--wrapper {
+  align-items: center !important;
+  height: 100% !important;
+}
+
+.header__menu--items {
+  padding: 0 0px !important;
+  margin: 0 !important;
+  line-height: 1 !important;
+}
+
+.header__menu--link {
+  font-size: 15px !important;
+}
+
+
+.header__menu--wrapper.d-flex {
+  justify-content: center !important;
+}
+
+
+@media only screen and (min-width: 992px) {
+  .row>* {
+    padding-right: 1.5rem !important;
+    /* padding-left: 4.5rem !important; */
+  }
+}
+
+.main__header--inner {
+  gap: 3rem;
+  height: 48px;
+}
+
+
+
+.search__filter--form .form-label {
+  font-weight: 600;
+  font-size: 14px;
+  margin-bottom: 6px;
+  color: #333;
+}
+
+.search__filter--form .form-control {
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  background-color: #fff;
+  transition: border-color 0.3s ease;
+}
+
+.search__filter--form .form-control:focus {
+  border-color: #ff4e21;
+  box-shadow: none;
+  outline: none;
+}
+
+
+
+
+/* Optional: Full-width on smaller devices */
+@media (max-width: 768px) {
+  .search__filter--form .col-md-6 {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 1366px) {
+  .hero__slider--items__style2 {
+    height: 505px !important;
+  }
+}
+
+
+.scrolling-wrapper {
+  overflow: hidden;
+  position: relative;
+}
+
+.scrolling-track {
+  display: flex;
+  animation: scroll-left 30s linear infinite;
+  width: max-content;
+}
+
+.brand-item {
+  flex: 0 0 auto;
+  margin-right: 40px;
+}
+
+.brand-logo {
+  max-height: 80px;
+  display: block;
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* Ensure text appears above overlay */
+.slider__content.style2 {
+  position: relative;
+  z-index: 1;
+  color: #fff;
+}
+
+.swiper-slide-active .slider__subtitle {
+  color: white !important;
+}
+
+
+.product__card--thumbnail {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+}
+
+@media only screen and (min-width: 1200px) {
+  .product__card--content {
+    padding: 0 2rem 2rem;
+    background-color: #fff;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .blog__card {
+    padding: 2rem;
+    background-color: #fff;
+  }
+}
+
+
+.about__thumb {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  /* or set a specific height if needed */
+  width: 100%;
+  overflow: hidden;
+}
+
+
+
+.breadcrumb__content--menu__items::before {
+  position: absolute;
+  content: "";
+  width: 1px;
+  height: 16px;
+  background: var(--secondary-color);
+  right: 0;
+  top: 0px !important;
+  border-radius: 5px;
+  transform: rotate(30deg);
+}
+
+.highlight {
+  color: #ff4e21 !important;
+  /* or any brand color */
+  font-weight: bold;
+}
+
+
+
+.footer__widget--desc {
+  color: #ffffff !important;
+}
+
+
+.footer__widget--menu__text {
+  color: #ffffff !important;
+}
+
+
+
+
+
+
+
+
+/* Hide the red phone button on screens wider than 992px (desktop and large tablets) */
+@media screen and (min-width: 992px) {
+  .mobile-call-button {
+    display: none !important;
+  }
+}
+
+/* Show the red phone button on screens smaller than 992px (mobile) */
+@media screen and (max-width: 991px) {
+  .mobile-call-button {
+    display: flex !important;
+  }
+}
+
+
+/* Hide the red phone button on screens wider than 992px (desktop and large tablets) */
+@media screen and (min-width: 992px) {
+  .mobile-logo {
+    display: none;
+  }
+}
+
+/* Show the red phone button on screens smaller than 992px (mobile) */
+@media screen and (max-width: 991px) {
+  .mobile-logo {
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header__bottom {
+    display: none;
+  }
+}
+
+/* Show on screens wider than 992px (desktop and large tablets) */
+@media screen and (min-width: 768px) {
+  .header__bottom {
+    display: block !important;
+    /* or 'flex' depending on layout */
+  }
+}
+
+.about__thumb {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  margin-bottom: -148px !important;
+}
+
+
+/* Hide section on screens smaller than 992px */
+@media (max-width: 991.98px) {
+  .desktop-only {
+    display: none !important;
+  }
+}
+
+.contact__form--input {
+  width: 100% !important;
+  height: 35px !important;
+  /* padding: 6px 51px !important; */
+  border-radius: 8px !important;
+  border: 1px solid var(--border-color) !important;
+  font-size: 14px !important;
+}
+
+.footer__widget--title {
+  line-height: 2.6rem;
+  margin-bottom: 2rem;
+  color: #ff4e21;
+}
+
+.slider__section--bg3 {
+  background: transparent !important;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+  background-size: cover;
+}
+
+.contact__form--input {
+  color: #797878 !important;
+}
+
+
+
+@media only screen and (max-width: 767.98px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  .product__section--inner .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .product__section--inner .col-6 {
+    width: 50%;
+    padding-left: 10px;
+    padding-right: 10px;
+    box-sizing: border-box;
+  }
+
+  .product__card {
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+    /* Ensure internal content doesn’t overflow */
+  }
+
+  .product__card--thumbnail {
+    width: 100%;
+    max-width: 209px;
+    height: 170px;
+    margin: 0 auto;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .product__card--thumbnail img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+}
+
+a,
+button {
+  font-size: 14px;
+}
+
+
+
+
+/* Mobile responsive fix for buttons */
+@media (max-width: 576px) {
+  .primary__btn.slider__btn {
+    font-size: 12px;
+    /* slightly smaller text */
+    padding: 1px 10px;
+    /* reduce padding */
+    min-width: 110px;
+    /* ensures text fits */
+    white-space: nowrap;
+    /* keep text in one line */
+  }
+
+  .primary__btn.slider__btn i {
+    font-size: 12px;
+    /* adjust icon size */
+    margin-right: 6px;
+    /* keep space with text */
+  }
+}
+
+/* REquest Call Back */
+.request-callback {
+  position: fixed;
+  right: 0;
+  top: 35%;
+  transform: translateY(-50%);
+  background-color: #ff4e21 !important;
+  /* Blue background */
+  color: white;
+  padding: 10px 8px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px 0 0 5px;
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  transition: background-color 0.3s ease, color 0.3s ease, border 0.3s ease;
+  z-index: 9999;
+  border: 2px solid transparent;
+  /* Default no border */
+}
+
+.request-callback:hover {
+  background-color: white;
+  /* Light background on hover */
+  color: #ff4e21 !important;
+  /* Blue text on hover */
+  border: 2px solid #ff4e21 !important;
+  /* Blue border on hover */
+}
+
+.modal {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 10000;
+}
+
+.modal-content {
+  background-color: white;
+  margin: 5% auto;
+  padding: 20px 30px;
+  border-radius: 8px;
+  max-width: 400px;
+  position: relative;
+}
+
+.close-btn {
+  position: absolute;
+  right: 15px;
+  top: 10px;
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+form label {
+  display: block;
+  margin-top: 15px;
+  font-weight: 600;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 3px;
+  margin-top: 5px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  resize: vertical;
+}
+
+form button {
+  margin-top: 20px;
+  background-color: #ff4e21;
+  color: white;
+  border: none;
+  padding: 5px 20px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
+  width: 40%;
+  text-align: center;
+}
+
+form button:hover {
+  background-color: #4285f4;
+}
+
+@media (max-width: 1200px) {
+  form button {
+    width: 55% !important;
+  }
+}
+
+@media (max-width: 576px) {
+  form button {
+    width: 65% !important;
+  }
+}
+
+
+/* REquest Call Back End */
+
+
+@media only screen and (min-width: 1366px) {
+  .slider__subtitle.style3 {
+    font-size: 2.5rem;
+    line-height: 3rem;
+    color: white;
+  }
+}
+
+.slider__content {
+  position: relative;
+  z-index: 9;
+  margin-bottom: 70px;
+  /* Default for desktop */
+}
+
+
+
+/* For mobile (up to 767px width) */
+@media (max-width: 767px) {
+  .slider__content {
+    margin-bottom: 0;
+  }
+}
+
+
+.slider__subtitle.style3 {
+  font-size: 1.5rem;
+  margin-bottom: 1.2rem;
+  line-height: 2.3rem;
+  text-transform: capitalize;
+  color: white;
+}
+
+
+html,
+body {
+  overflow-x: visible !important;
+}
+
+.swiper-slide {
+  position: relative;
+}
+
+.swiper-slide::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  /* adjust darkness */
+  z-index: 1;
+}
+
+/* keep slide content above overlay */
+.swiper-slide>* {
+  position: relative;
+  z-index: 2;
+
+}
+
+@media (max-width: 576px) {
+  .newsletter__title {
+    font-size: 32px;
+    line-height: 39px;
+    color: var(--text-white-color);
+    margin-bottom: 0.8rem;
+  }
+}
+
+.main__footer {
+  padding: 1.5rem 0 2.7rem !important;
+}
+
+
+@media only screen and (min-width: 768px) {
+  .main__footer {
+    padding: 5.5rem 0 2.7rem !important;
+  }
+}
