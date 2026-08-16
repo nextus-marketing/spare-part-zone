@@ -32,7 +32,7 @@ class Thankyou extends Mailable
     public function build()
     {
         return $this->markdown('Email.thankyou')
-            ->from("support@sparepartzone.com", "Premium Car parts")
-            ->subject("Premium Car parts - New Enquiry Received");
+            ->from("support@sparepartzone.com", "Spare Part Zone")
+            ->subject("Spare Part Zone - New Enquiry Received");
     }
 }

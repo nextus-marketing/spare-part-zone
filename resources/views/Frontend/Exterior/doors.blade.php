@@ -51,8 +51,7 @@
                         <span class="about__content--subtitle text__secondary mb-20">High-Quality Car Doors Built to Fit,
                             Made to Last</span>
                         <h2 class="about__content--maintitle mb-25">Door</h2>
-                        <p class="about__content--desc mb-20">Looking to replace a damaged or rusted door? At Premium Car
-                            Parts, we offer top-quality car doors for a wide range of vehicles, including sedans, SUVs,
+                        <p class="about__content--desc mb-20">Looking to replace a damaged or rusted door? At Spare Part Zone, we offer top-quality car doors for a wide range of vehicles, including sedans, SUVs,
                             trucks, and vans. Our doors are manufactured to meet OEM standards for perfect fitment,
                             durability, and safety. Whether you need a full door shell or just the outer skin, our selection
                             ensures your vehicle looks great and functions like new. Built from high-strength steel or

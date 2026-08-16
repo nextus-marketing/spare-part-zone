@@ -52,8 +52,7 @@
                             Style</span>
                         <h2 class="about__content--maintitle mb-25">Hood</h2>
                         <p class="about__content--desc mb-20">Your vehicle's hood isn't just about looks—it protects
-                            critical engine components while enhancing aerodynamics and overall safety. At Premium Car
-                            Parts, we offer a wide selection of high-quality replacement hoods that match OEM specifications
+                            critical engine components while enhancing aerodynamics and overall safety. At Spare Part Zone, we offer a wide selection of high-quality replacement hoods that match OEM specifications
                             for fit, strength, and style. Whether you're repairing collision damage, upgrading to a
                             performance hood, or restoring a classic car, our hoods come primed and ready for painting.
                             Available in steel, aluminum, or lightweight carbon fiber, each hood is designed to deliver

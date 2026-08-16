@@ -1628,8 +1628,7 @@
             <div class="newsletter__area">
                 <div class="newsletter__inner d-flex justify-content-between align-items-center">
                     <div class="newsletter__content">
-                        <h2 class="newsletter__title"> <span class="highlight" style="color: #ff4e21">Premium Car
-                                Parts</span> Your
+                        <h2 class="newsletter__title"> <span class="highlight" style="color: #ff4e21">Spare Part Zone</span> Your
                             Trusted Auto Parts Partner</h2>
                         <p class="newsletter__desc" style="color:#ffff;">Quality You Can Rely On, Performance You Can
                             Feel.</p>
