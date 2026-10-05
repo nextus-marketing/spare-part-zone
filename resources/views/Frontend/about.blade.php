@@ -156,7 +156,7 @@
         "logo": "https://sparepartzone.com/frontend/my_img/logo/new_logo.svg",
         "contactPoint": {
             "@type": "ContactPoint",
-            "telephone": "+18883707485",
+             "telephone": "+1 (855) 581-5811",
             "contactType": "sales",
             "areaServed": "US",
             "availableLanguage": "en"

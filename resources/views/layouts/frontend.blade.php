@@ -1,4 +1,4 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="en">
 
 <head>
@@ -84,7 +84,7 @@
     <!-- Top Scrolling Advertisement -->
     <div class="top-scroller">
         <div class="top-scroller__content">
-            Upgrade Your Ride Now! <strong>Get 35% Off </strong>on Spare Part Zone – Engine, Suspension, Electrical &
+            Upgrade Your Ride Now! <strong>Get 35% Off </strong>on Spare Part Zone â€“ Engine, Suspension, Electrical &
             More! Limited Stock!
         </div>
     </div>
@@ -268,27 +268,19 @@
         }
 
         /* === FIX: Make the offcanvas scrollable === */
-        .offcanvas {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 320px;
-            /* sidebar width */
-            height: 100vh;
-            /* full screen height */
-            background: #fff;
-            /* white background */
-            z-index: 9999;
-            /* above everything */
-            overflow-y: auto;
-            /* enable vertical scroll */
-            -webkit-overflow-scrolling: touch;
-            /* smooth on iOS */
+        .offcanvas__header {
+            display: flex !important;
+            flex-direction: column !important;
+            overflow: hidden !important;
+            height: 100vh !important;
         }
 
         .offcanvas__inner {
+            flex: 1 1 auto !important;
+            overflow-y: auto !important;
+            -webkit-overflow-scrolling: touch !important;
+            overscroll-behavior: contain !important;
             padding-right: 5px;
-            /* so scrollbar doesn’t overlap text */
         }
 
         /* Lock body when menu is open */
@@ -502,6 +494,7 @@
                                     <li class="header__menu--items">
                                         <a class="header__menu--link text-black" href="/about">About Us</a>
                                     </li>
+                                   
                                     <li class="header__menu--items">
                                         <a class="header__menu--link text-black" href="#0">Auto Parts
                                             <svg class="menu__arrowdown--icon" xmlns="http://www.w3.org/2000/svg"
@@ -793,6 +786,260 @@
 
                                         </ul>
                                     </li>
+                                     <li class="header__menu--items mega__menu--items">
+                                        <a class="header__menu--link" href="#0">
+                                            Find By Cars
+                                            <svg class="menu__arrowdown--icon" xmlns="http://www.w3.org/2000/svg"
+                                                width="12" height="7.41" viewBox="0 0 12 7.41">
+                                                <path d="M16.59,8.59,12,13.17,7.41,8.59,6,10l6,6,6-6Z"
+                                                    transform="translate(-6 -8.59)"
+                                                    fill="currentColor"
+                                                    opacity="0.7" />
+                                            </svg>
+                                        </a>
+
+                                        <ul class="header__mega--menu d-flex">
+
+                                            <!-- ================= COLUMN 1 ================= -->
+                                            <li class="header__mega--menu__li">
+                                                <ul class="header__mega--sub__menu">
+
+                                                    <li class="header__mega--sub__menu_li">
+                                                        <a class="header__mega--sub__menu--title"
+                                                            href="/acura-parts">
+                                                            Acura Parts
+                                                        </a>
+                                                    </li>
+
+                                                    <li class="header__mega--sub__menu_li">
+                                                        <a class="header__mega--sub__menu--title"
+                                                            href="/audi-parts">
+                                                            Audi Parts
+                                                        </a>
+                                                    </li>
+
+                                                    <li class="header__mega--sub__menu_li">
+                                                        <a class="header__mega--sub__menu--title"
+                                                            href="/bmw-parts">
+                                                            BMW Parts
+                                                        </a>
+                                                    </li>
+
+                                                    <li class="header__mega--sub__menu_li">
+                                                        <a class="header__mega--sub__menu--title"
+                                                            href="/chevrolet-parts">
+                                                            Chevrolet Parts
+                                                        </a>
+                                                    </li>
+
+                                                    <li class="header__mega--sub__menu_li">
+                                                        <a class="header__mega--sub__menu--title"
+                                                            href="/dodge-parts">
+                                                            Dodge Parts
+                                                        </a>
+                                                    </li>
+
+                                                    <li class="header__mega--sub__menu_li">
+                                                        <a class="header__mega--sub__menu--title"
+                                                            href="/ford-parts">
+                                                            Ford Parts
+                                                        </a>
+                                                    </li>
+
+                                                </ul>
+                                            </li>
+
+
+                                            <!-- ================= COLUMN 2 ================= -->
+                                            <li class="header__mega--menu__li">
+                                                <ul class="header__mega--sub__menu">
+
+                                                    <li class="header__mega--sub__menu_li">
+                                                        <a class="header__mega--sub__menu--title"
+                                                            href="/gmc-parts">
+                                                            GMC Parts
+                                                        </a>
+                                                    </li>
+
+                                                    <li class="header__mega--sub__menu_li">
+                                                        <a class="header__mega--sub__menu--title"
+                                                            href="/honda-parts">
+                                                            Honda Parts
+                                                        </a>
+                                                    </li>
+
+                                                    <li class="header__mega--sub__menu_li">
+                                                        <a class="header__mega--sub__menu--title"
+                                                            href="/hyundai-parts">
+                                                            Hyundai Parts
+                                                        </a>
+                                                    </li>
+
+                                                    <li class="header__mega--sub__menu_li">
+                                                        <a class="header__mega--sub__menu--title"
+                                                            href="/infiniti-parts">
+                                                            Infiniti Parts
+                                                        </a>
+                                                    </li>
+
+
+                                                    <li class="header__mega--sub__menu_li">
+                                                        <a class="header__mega--sub__menu--title"
+                                                            href="/jeep-parts">
+                                                            Jeep Parts
+                                                        </a>
+                                                    </li>
+
+                                                </ul>
+                                            </li>
+
+
+                                            <!-- ================= COLUMN 3 ================= -->
+                                            <li class="header__mega--menu__li">
+                                                <ul class="header__mega--sub__menu">
+
+                                                    <li class="header__mega--sub__menu_li">
+                                                        <a class="header__mega--sub__menu--title"
+                                                            href="/kia-parts">
+                                                            Kia Parts
+                                                        </a>
+                                                    </li>
+
+                                                    <li class="header__mega--sub__menu_li">
+                                                        <a class="header__mega--sub__menu--title"
+                                                            href="/lexus-parts">
+                                                            Lexus Parts
+                                                        </a>
+                                                    </li>
+
+                                                    <li class="header__mega--sub__menu_li">
+                                                        <a class="header__mega--sub__menu--title"
+                                                            href="/mazda-parts">
+                                                            Mazda Parts
+                                                        </a>
+                                                    </li>
+
+                                                    <li class="header__mega--sub__menu_li">
+                                                        <a class="header__mega--sub__menu--title"
+                                                            href="/mercedes-benz-parts">
+                                                            Mercedes-Benz Parts
+                                                        </a>
+                                                    </li>
+
+                                                    <li class="header__mega--sub__menu_li">
+                                                        <a class="header__mega--sub__menu--title"
+                                                            href="/nissan-parts">
+                                                            Nissan Parts
+                                                        </a>
+                                                    </li>
+
+                                                    <li class="header__mega--sub__menu_li">
+                                                        <a class="header__mega--sub__menu--title"
+                                                            href="/subaru-parts">
+                                                            Subaru Parts
+                                                        </a>
+                                                    </li>
+
+                                                </ul>
+                                            </li>
+
+
+                                            <!-- ================= COLUMN 4 ================= -->
+                                            <li class="header__mega--menu__li">
+                                                <ul class="header__mega--sub__menu">
+
+                                                    <li class="header__mega--sub__menu_li">
+                                                        <a class="header__mega--sub__menu--title"
+                                                            href="/tesla-parts">
+                                                            Tesla Parts
+                                                        </a>
+                                                    </li>
+
+                                                    <li class="header__mega--sub__menu_li">
+                                                        <a class="header__mega--sub__menu--title"
+                                                            href="/toyota-parts">
+                                                            Toyota Parts
+                                                        </a>
+                                                    </li>
+
+                                                    <li class="header__mega--sub__menu_li">
+                                                        <a class="header__mega--sub__menu--title"
+                                                            href="/volkswagen-parts">
+                                                            Volkswagen Parts
+                                                        </a>
+                                                    </li>
+
+                                                    <li class="header__mega--sub__menu_li">
+                                                        <a class="header__mega--sub__menu--title"
+                                                            href="/volvo-parts">
+                                                            Volvo Parts
+                                                        </a>
+                                                    </li>
+
+                                                </ul>
+                                            </li>
+
+
+                                            <!-- ================= BANNERS ================= -->
+                                            <li class="header__mega--menu__li fullscreen__style d-flex">
+
+                                                <!-- Banner 1 -->
+                                                <a class="header__mega--menu__banner display-block"
+                                                    href="tel:+1 (855) 581-5811">
+
+                                                    <img class="header__mega--menu__banner--img"
+                                                        src="/frontend/assets/img/banner/banner1.webp"
+                                                        alt="banner-menu">
+
+                                                    <div class="banner__content">
+
+                                                       
+
+                                                        <h2 class="banner__content--title">
+                                                            <span class="banner__content--title__inner">
+                                                                New
+                                                            </span>
+                                                            COLLECTION
+                                                        </h2>
+
+                                                       
+
+                                                    </div>
+
+                                                </a>
+
+
+                                                <!-- Banner 2 -->
+                                                <a class="header__mega--menu__banner display-block"
+                                                    href="tel:+1 (855) 581-5811">
+
+                                                    <img class="header__mega--menu__banner--img"
+                                                        src="/frontend/assets/img/banner/banner2.webp"
+                                                        alt="banner-menu">
+
+                                                    <div class="banner__content right">
+
+                                                        <span class="banner__badge--style2">
+                                                           35% OFF
+                                                        </span>
+
+                                                        <h2 class="banner__content--title">
+                                                            <span class="banner__content--title__inner">
+                                                                ON
+                                                            </span>
+                                                            SALE <br>
+                                                            PRODUCT
+                                                        </h2>
+
+                                                    </div>
+
+                                                </a>
+
+                                            </li>
+
+                                        </ul>
+                                    </li>
+
                                     <li class="header__menu--items">
                                         <a class="header__menu--link text-black" href="/blogs">Blogs</a>
                                     </li>
@@ -815,7 +1062,7 @@
                                                 text-decoration:none;
                                                 transition:background 0.3s ease;
                                                 position:absolute;
-                                                right:15px;
+                                                right:-54px;
                                                 top:50%;
                                                 transform:translateY(-50%);">
                                         <i class="fa-solid fa-phone" style="font-size:16px;"></i>
@@ -1058,6 +1305,167 @@
                                 </li>
                             </ul>
                         </li>
+                        <!-- Find By Cars - Mobile Menu -->
+                        <li class="offcanvas__menu_li">
+
+                            <a class="offcanvas__menu_item" href="#0">
+                                Find By Cars
+                            </a>
+
+                            <ul class="offcanvas__submenu_ul">
+
+                                <!-- Acura -->
+                                <li>
+                                    <a class="offcanvas__submenu_item" href="/acura-parts">
+                                        Acura Parts
+                                    </a>
+                                </li>
+
+                                <!-- Audi -->
+                                <li>
+                                    <a class="offcanvas__submenu_item" href="/audi-parts">
+                                        Audi Parts
+                                    </a>
+                                </li>
+
+                                <!-- BMW -->
+                                <li>
+                                    <a class="offcanvas__submenu_item" href="/bmw-parts">
+                                        BMW Parts
+                                    </a>
+                                </li>
+
+                                <!-- Chevrolet -->
+                                <li>
+                                    <a class="offcanvas__submenu_item" href="/chevrolet-parts">
+                                        Chevrolet Parts
+                                    </a>
+                                </li>
+
+                                <!-- Dodge -->
+                                <li>
+                                    <a class="offcanvas__submenu_item" href="/dodge-parts">
+                                        Dodge Parts
+                                    </a>
+                                </li>
+
+                                <!-- Ford -->
+                                <li>
+                                    <a class="offcanvas__submenu_item" href="/ford-parts">
+                                        Ford Parts
+                                    </a>
+                                </li>
+
+                                <!-- GMC -->
+                                <li>
+                                    <a class="offcanvas__submenu_item" href="/gmc-parts">
+                                        GMC Parts
+                                    </a>
+                                </li>
+
+                                <!-- Honda -->
+                                <li>
+                                    <a class="offcanvas__submenu_item" href="/honda-parts">
+                                        Honda Parts
+                                    </a>
+                                </li>
+
+                                <!-- Hyundai -->
+                                <li>
+                                    <a class="offcanvas__submenu_item" href="/hyundai-parts">
+                                        Hyundai Parts
+                                    </a>
+                                </li>
+
+                                <!-- Infiniti -->
+                                <li>
+                                    <a class="offcanvas__submenu_item" href="/infiniti-parts">
+                                        Infiniti Parts
+                                    </a>
+                                </li>
+
+
+                                <!-- Jeep -->
+                                <li>
+                                    <a class="offcanvas__submenu_item" href="/jeep-parts">
+                                        Jeep Parts
+                                    </a>
+                                </li>
+
+                                <!-- Kia -->
+                                <li>
+                                    <a class="offcanvas__submenu_item" href="/kia-parts">
+                                        Kia Parts
+                                    </a>
+                                </li>
+
+                                <!-- Lexus -->
+                                <li>
+                                    <a class="offcanvas__submenu_item" href="/lexus-parts">
+                                        Lexus Parts
+                                    </a>
+                                </li>
+
+                                <!-- Mazda -->
+                                <li>
+                                    <a class="offcanvas__submenu_item" href="/mazda-parts">
+                                        Mazda Parts
+                                    </a>
+                                </li>
+
+                                <!-- Mercedes-Benz -->
+                                <li>
+                                    <a class="offcanvas__submenu_item" href="/mercedes-benz-parts">
+                                        Mercedes-Benz Parts
+                                    </a>
+                                </li>
+
+                                <!-- Nissan -->
+                                <li>
+                                    <a class="offcanvas__submenu_item" href="/nissan-parts">
+                                        Nissan Parts
+                                    </a>
+                                </li>
+
+                                <!-- Subaru -->
+                                <li>
+                                    <a class="offcanvas__submenu_item" href="/subaru-parts">
+                                        Subaru Parts
+                                    </a>
+                                </li>
+
+                                <!-- Tesla -->
+                                <li>
+                                    <a class="offcanvas__submenu_item" href="/tesla-parts">
+                                        Tesla Parts
+                                    </a>
+                                </li>
+
+                                <!-- Toyota -->
+                                <li>
+                                    <a class="offcanvas__submenu_item" href="/toyota-parts">
+                                        Toyota Parts
+                                    </a>
+                                </li>
+
+                                <!-- Volkswagen -->
+                                <li>
+                                    <a class="offcanvas__submenu_item" href="/volkswagen-parts">
+                                        Volkswagen Parts
+                                    </a>
+                                </li>
+
+                                <!-- Volvo -->
+                                <li>
+                                    <a class="offcanvas__submenu_item" href="/volvo-parts">
+                                        Volvo Parts
+                                    </a>
+                                </li>
+
+                            </ul>
+
+                        </li>
+
                         <!-- End Auto Parts -->
                         <li class="offcanvas__menu_li"><a class="offcanvas__menu_item" href="/blogs">Blogs</a>
                         </li>
@@ -1091,7 +1499,7 @@
                     <img class="newsletter__popup--thumbnail__img display-block" src="/frontend/my_img/pop-up.webp"
                         alt="newsletter-popup-thumb">
                     <div class="popup-badge">
-                        <span class="pulse-dot"></span> ⚡ LIMITED TIME OFFER
+                        <span class="pulse-dot"></span> âš¡ LIMITED TIME OFFER
                     </div>
                 </div>
                 <div class="newsletter__popup--box__right">
@@ -1589,7 +1997,7 @@
                 }
             }
 
-            // Close button listener — closes it for good, never shows again on this page load
+            // Close button listener â€” closes it for good, never shows again on this page load
             document.addEventListener('click', function(e) {
                 let closeBtn = e.target.closest('.newsletter__popup--close__btn') || e.target.closest(
                     '#popupCloseBtn');
@@ -1910,7 +2318,7 @@
                                 alt="logo-img">
                         </a>
                     </div>
-                    <p class="copyright__content"><span class="text__secondary">© 2025</span> Powered by
+                    <p class="copyright__content"><span class="text__secondary">Â© 2025</span> Powered by
                         <a class="copyright__content--link" target="_blank" href="/">Spare Part Zone</a>
                         All Rights Reserved.
                     </p>
@@ -2182,7 +2590,7 @@
                     // Add toggle icon
                     let toggle = document.createElement("span");
                     toggle.classList.add("menu-toggle");
-                    toggle.textContent = "▶"; // Right arrow
+                    toggle.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 512 512" style="vertical-align:middle;margin-left:4px;"><path d="M98 190.06l139.78 163.12a24 24 0 0036.44 0L414 190.06c13.34-15.57 2.28-39.62-18.22-39.62h-279.6c-20.5 0-31.56 24.05-18.18 39.62z" fill="currentColor"/></svg>'; // Chevron arrow
                     link.appendChild(toggle);
 
                     // Click handler
@@ -2236,7 +2644,7 @@
                         });
                     }
                 }
-                // else → no submenu, let it navigate normally
+                // else â†’ no submenu, let it navigate normally
             });
         });
     </script>
@@ -2311,10 +2719,10 @@
                                 var errorText = Array.isArray(value) ? value.join(
                                     ', ') : value;
                                 form.find('#' + key + '-error').html(
-                                    errorText); // ✅ Scoped to form
+                                    errorText); // âœ… Scoped to form
                             });
 
-                            // ✅ Scroll to first error in this form only
+                            // âœ… Scroll to first error in this form only
                             var firstErrorKey = Object.keys(xhr.responseJSON.errors)[0];
                             $('html, body').animate({
                                 scrollTop: form.find('#' + firstErrorKey + '-error')
@@ -2347,7 +2755,7 @@
     <script>
         $(document).ready(function() {
 
-            // ✅ Add CSRF token to AJAX headers
+            // âœ… Add CSRF token to AJAX headers
             $.ajaxSetup({
                 headers: {
                     'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
@@ -2412,10 +2820,10 @@
                                 var errorText = Array.isArray(value) ? value.join(
                                     ', ') : value;
                                 form.find('#' + key + '-error').html(
-                                    errorText); // ✅ Scoped to form
+                                    errorText); // âœ… Scoped to form
                             });
 
-                            // ✅ Scroll to first error in this form only
+                            // âœ… Scroll to first error in this form only
                             var firstErrorKey = Object.keys(xhr.responseJSON.errors)[0];
                             $('html, body').animate({
                                 scrollTop: form.find('#' + firstErrorKey + '-error')
@@ -2451,7 +2859,7 @@
     <script>
         $(document).ready(function() {
 
-            // ✅ Add CSRF token to AJAX headers
+            // âœ… Add CSRF token to AJAX headers
             $.ajaxSetup({
                 headers: {
                     'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
@@ -2508,10 +2916,10 @@
                                 var errorText = Array.isArray(value) ? value.join(
                                     ', ') : value;
                                 form.find('#' + key + '-error').html(
-                                    errorText); // ✅ Scoped to form
+                                    errorText); // âœ… Scoped to form
                             });
 
-                            // ✅ Scroll to first error in this form only
+                            // âœ… Scroll to first error in this form only
                             var firstErrorKey = Object.keys(xhr.responseJSON.errors)[0];
                             $('html, body').animate({
                                 scrollTop: form.find('#' + firstErrorKey + '-error')

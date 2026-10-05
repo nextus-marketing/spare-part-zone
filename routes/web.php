@@ -458,6 +458,53 @@ Route::view('/exterior-parts', 'Frontend.Categories.exterior-parts')->name('exte
 Route::view('/interior-parts', 'Frontend.Categories.interior-parts')->name('interior-parts');
 
 
+//Cars-Model
+
+// Cars - Brand Parts
+
+Route::view('/acura-parts', 'Frontend.Cars.acura-parts')->name('/acura-parts');
+
+Route::view('/audi-parts', 'Frontend.Cars.audi-parts')->name('/audi-parts');
+
+Route::view('/bmw-parts', 'Frontend.Cars.bmw-parts')->name('/bmw-parts');
+
+Route::view('/chevrolet-parts', 'Frontend.Cars.chevrolet-parts')->name('/chevrolet-parts');
+
+Route::view('/dodge-parts', 'Frontend.Cars.dodge-parts')->name('/dodge-parts');
+
+Route::view('/ford-parts', 'Frontend.Cars.ford-parts')->name('/ford-parts');
+
+Route::view('/gmc-parts', 'Frontend.Cars.gmc-parts')->name('/gmc-parts');
+
+Route::view('/honda-parts', 'Frontend.Cars.honda-parts')->name('/honda-parts');
+
+Route::view('/hyundai-parts', 'Frontend.Cars.hyundai-parts')->name('/hyundai-parts');
+
+Route::view('/infiniti-parts', 'Frontend.Cars.infiniti-parts')->name('/infiniti-parts');
+
+Route::view('/jeep-parts', 'Frontend.Cars.jeep-parts')->name('/jeep-parts');
+
+Route::view('/kia-parts', 'Frontend.Cars.kia-parts')->name('/kia-parts');
+
+Route::view('/lexus-parts', 'Frontend.Cars.lexus-parts')->name('/lexus-parts');
+
+Route::view('/mazda-parts', 'Frontend.Cars.mazda-parts')->name('/mazda-parts');
+
+Route::view('/mercedes-benz-parts', 'Frontend.Cars.mercedes-benz-parts')->name('/mercedes-benz-parts');
+
+Route::view('/nissan-parts', 'Frontend.Cars.nissan-parts')->name('/nissan-parts');
+
+Route::view('/subaru-parts', 'Frontend.Cars.subaru-parts')->name('/subaru-parts');
+
+Route::view('/tesla-parts', 'Frontend.Cars.tesla-parts')->name('/tesla-parts');
+
+Route::view('/toyota-parts', 'Frontend.Cars.toyota-parts')->name('/toyota-parts');
+
+Route::view('/volkswagen-parts', 'Frontend.Cars.volkswagen-parts')->name('/volkswagen-parts');
+
+Route::view('/volvo-parts', 'Frontend.Cars.volvo-parts')->name('/volvo-parts');
+
+
 Route::fallback(function () {
     return response()->view('Error.404', [], 404);
 });
