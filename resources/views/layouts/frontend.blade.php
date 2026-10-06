@@ -1,4 +1,4 @@
-﻿<!doctype html>
+<!doctype html>
 <html lang="en">
 
 <head>
@@ -29,7 +29,7 @@
     <!-- Custom Style CSS -->
     <link rel="stylesheet" href="/frontend/assets/css/style.css?v=2.0">
     <!-- My Style CSS -->
-    <link rel="stylesheet" href="/frontend/assets/css/my.css?v=2.0">
+    <link rel="stylesheet" href="/frontend/assets/css/my.css?v=2.1">
     <!-- Font Awesome CDN -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"

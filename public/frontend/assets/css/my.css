@@ -327,17 +327,6 @@ li {
 }
 
 
-.about__thumb {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-  /* or set a specific height if needed */
-  width: 100%;
-  overflow: hidden;
-}
-
-
 
 .breadcrumb__content--menu__items::before {
   position: absolute;
