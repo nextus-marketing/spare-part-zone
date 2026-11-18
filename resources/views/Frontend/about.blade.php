@@ -106,44 +106,6 @@
     </section>
     <!-- End about section -->
 
-    <!-- Counter Section -->
-    <div class="counterup__banner--section counterup__banner__bg2 mb-10"
-        id="funfactId">
-        <div class="container">
-            <div class="row row-cols-2 row-cols-lg-4 g-4 justify-content-center text-center">
-
-                <div class="col">
-                    <div class="counterup__items">
-                        <h2 class="counterup__title">Products in Stock</h2>
-                        <span class="counterup__number js-counter" data-count="50000">0</span>
-                    </div>
-                </div>
-
-                <div class="col">
-                    <div class="counterup__items">
-                        <h2 class="counterup__title">Happy Customers</h2>
-                        <span class="counterup__number js-counter" data-count="100000">0</span>
-                    </div>
-                </div>
-
-                <div class="col">
-                    <div class="counterup__items">
-                        <h2 class="counterup__title">Parts Categories</h2>
-                        <span class="counterup__number js-counter" data-count="150">0</span>
-                    </div>
-                </div>
-
-                <div class="col">
-                    <div class="counterup__items">
-                        <h2 class="counterup__title">Total Experience</h2>
-                        <span class="counterup__number js-counter" data-count="10">0</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- End counter section -->
-
 </main>
 
 <!-- Schema Markup -->
